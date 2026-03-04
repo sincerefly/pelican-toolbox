@@ -7,7 +7,7 @@ WORKDIR /app
 # 复制项目文件到工作目录
 COPY . /app
 
-RUN apk --no-cache add bash curl nodejs npm
+RUN apk --no-cache add bash curl nodejs npm make
 
 # 安装 pnpm
 RUN npm install -g pnpm
@@ -16,8 +16,8 @@ RUN npm install -g pnpm
 # RUN apk --no-cache add gcc musl-dev libxml2-dev libxslt-dev
 RUN pip install pelican[markdown]
 
-# 验证 Node/npm/pnpm 可用
-RUN node -v && npm -v && pnpm -v
+# 验证 Node/npm/pnpm/make 可用
+RUN node -v && npm -v && pnpm -v && make -v
 
 # 安装 UPX
 RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
