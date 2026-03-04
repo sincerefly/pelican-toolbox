@@ -35,7 +35,7 @@ git push origin main --tags
 
 3. GitHub Actions 自动构建并推送：
 
-- `joecovert/pelican-toolbox:1.0.0`
-- `joecovert/pelican-toolbox:1.0`
-- `joecovert/pelican-toolbox:1`
-- `joecovert/pelican-toolbox:latest`
+- `kissbug8720/pelican-toolbox:1.0.0`
+- `kissbug8720/pelican-toolbox:1.0`
+- `kissbug8720/pelican-toolbox:1`
+- `kissbug8720/pelican-toolbox:latest`

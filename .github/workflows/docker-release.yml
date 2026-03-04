@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: joecovert/pelican-toolbox
+  IMAGE_NAME: kissbug8720/pelican-toolbox
   PLATFORMS: linux/amd64,linux/arm64
 
 jobs:
